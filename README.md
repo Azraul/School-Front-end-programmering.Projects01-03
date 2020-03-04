@@ -9,7 +9,7 @@ Some parts are credited in the comments of the code to original authors/tutorial
 Just download and open!
 
 ## Preview
-![image of program running](media/site.gif)
+![image of program running](frontend/media/site.gif)
 
 ## Contribution
 School project, won't be updated but constructive criticism is welcome.
