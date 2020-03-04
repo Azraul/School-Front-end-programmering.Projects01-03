@@ -11,6 +11,15 @@ Just download and open!
 ## Preview
 ![image of program running](frontend/media/site.gif)
 
+
+## Grades
+###### Project 01
+63/68
+###### Project 02
+85/90
+###### Project 03
+86/90
+
 ## Contribution
 School project, won't be updated but constructive criticism is welcome.
 
