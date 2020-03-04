@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kristoffers Front-End</title>
+    <link rel="stylesheet" href="../media/temp.css">
+    </head>
+    <body>
+    <div id="navbar">
+        <a href="../Home/">Home</a>
+        <a href="../pro1/">Projekt 1</a>
+        <a href="../rap1/" class="activeNav">Projekt 1 rapport</a>
+        <a href="../pro2/">Projekt 2</a>
+        <a href="../rap2/">Projekt 2 rapport</a>
+        <a href="../pro3/">Projekt 3</a>
+        <a href="../rap3/">Projekt 3 rapport</a>
+    </div>
+<div id="bakgrundPengar"></div>
+<div id="mainFrame">
+    <div class="mainContent">
+        <div class="pageTitle">
+            <h1>Rapport för projekt 1</h1>
+            <article id="mainContent">
+                <p>
+                        <h2>Utförande</h2>
+                        Samtliga uppgifter utfördes i Visual Studio Code med hjälp av W3.schools.com, stackoverflow och Arcadas lärande och handledande. JavaScript dokumentet innehåller kommentarer utöver detta dokument.
+                        <h3>Första halvan<h3>
+                        <h4>Uppgifter 1-3</h4>
+                        Väldigt rakt fram, skriv något i ett fält, tryck på knappen och gör något med det som stod i fältet. Skapade även felmedlandet #N/A om användaren inte skrev in ett nummer i uppgift 2 samt adderade ett € tecken i slutet på strängen i uppgift 3.
+                        <h4>Uppgift 4</h4>
+                        RGB och hexadecimal omvandlare med färgsättning. Användaren har en fylld cirkel och ett fält där en kod som börjar med ”rgb(” och slutar på ”)” eller börja med ”#” skall skrivas för att definiera vilken typ av kod som används, stor bokstav är tillåtet, korta 3 siffrors hexadecimal koder.
+                        Med hjälp av if satser kollar JavaScripten om det är ett hexadecimaltal först eller rgb. Om det är rgb konvertera den det till hexadecimal. När den väl har ett hexadecimaltal kollar den om det är långt nog så användaren inte skriver in ogiltiga parametrar.
+                        När scriptet väl har en hexadecimalkod ändrar den färgen på bollen och skriver ut värden som hexadecimal och rgb(xxx,xxx,xxx). Konverteringen använder sig av chatAt() för att hitta rätt del i det inmatade värdet följt av parseInt för konverteringen mellan 16-(hexa) eller 10-tal(rgb).
+                        <h3>Andra halvan</h3>
+                        <h4>Uppgift 5</h4>
+                        Först hittades ett flertal förnamn och efternamn, de skrevs in i en array. Arrayerna adderades sedan ihop slumpmässigt med Math.random() funktionen och skrevs ut i html. Math.random() användes även för att skapa 10 slumpmässiga heltal i samma funktion.
+                        While loopar användes sedan för att sortera listorna med namn och siffror i alfabetiska samt sjunkande ordning. If satsen i while loopen jämför två element och byter plats på dem ifall det ena elementet är ”större”.
+                        <h4>Uppgift 6</h4>
+                        Skriver ut nuvarande tid i konsolen samt dagens datum för användaren, detta följt av ett fält där användaren kan välja x antal dagar framåt. Dock flyttas valet av dag framåt ifall det blir en lördag eller söndag, till följande måndag.
+                        En prototyp användes för att skriva en ny funktion in i Date() metodens standard. Som adderar nuvarande dag med dag-antalet användaren matar in. Detta skrivs sedan ut i och använder sig av en veckodags array där den hämtar vilken veckodag användaren fått fram.
+                        <h4>Uppgift 7</h4>
+                        Knapptryck där användaren får ett slumpmässigt referensnummer med en giltig kontrollsiffra och rätt uppbyggnad på numret, max 5 tecken i rad för finska referensnummer och max 4 tecken i rad för internationella. Utskrivning i konsolen sparades.
+                        <h4>Uppgift 8</h4>
+                        Ber användaren skriva ett finskt personsignum som sedan kontrolleras enligt den finska standarden (https://sv.wikipedia.org/wiki/Personnummer#Finland). Skapade en array för att kunna hämta kontrolltecknet senare och jämförde resultatet från det inmatade värdet med arrayen.
+                        Om uppgifterna var sanna fick användaren även veta vilken veckodag den uppgift sig blivit född på samt vilket kön. Arrayen om veckodagar användes från tidigare uppgift.
+                        
+                </p>
+                <p>
+                   <h2>Iakttagelser</h2>
+                        <h3>Uppgift 1-3 & 8</h3>
+                            Väldigt liknande uppgifter där användaren bes uppge en inmatning som sedermera omvandlas och kontrolleras. Modulus (%) var nytt annars baserade sig uppgifterna starkt på kunskap vi erhållit och kunde lösas med egna JavaScript redan vid projektets början.
+                        <h3>Uppgift 4</h3>
+                            Missuppfattad uppgift då en accepterad lösning hade varit 3 fält för rgb samt ett 4:e fält för hexadecimal kod istället för 1 fält där användaren kan skriva in tecken samt siffror för att avgöra vilken typ av kod den vill använda. Uppgiftens funktion, att ändra färg på ett objekt, var ej i linje med de andra uppgifterna som någorlunda hade med bankärenden att göra.
+                        <h3>Uppgift 5 & 7</h3>
+                            Användandet av Math.random() samt att behandla JavaScripts arrays. Fann inte en direkt översättning mellan JavaScript arrays och html vilket gjorde flyttandet av informationen svår. Detta kunde kringgåtts med att aldrig skrivit ut namnen i uppgift 7 innan de sorterats.
+                        <h3>Uppgift 6</h3>
+                            Med hjälp av prototypanvändning kunde i princip dagens millisekind+millisekunder lösningen flyttas till en simplare dag+dagar lösning. Uppgiften känns väsentlig p.g.a. datum/tid vikten i dagens samhälle och liknande uppgifter kommer troligen uppskattas t.ex. uppgift för mötesbokning med följande undervisning.
+                </p>
+                <p>
+                    <h2>Lärdomar & Reflektioner</h2>
+                        <p class="signature">Varning! Jag former och perspektiv!</p>
+                        <p>Det viktigaste först, att jag började i tid vilket betalade av sig, dock blev två lektionstillfällen onödiga då projektets uppgifter redan var lösta. Borde man undvikt lektion och kanske missat något eller kunde möjligen lektionerna ha kommit tidigare. Att det tillkomma extra lektioner för dem som inte började tidigare är fullt försåtligt då de flesta undviker att påbörja ett projekt innan all information är given (dvs. alla lektioner innan projektet hållna) eftersom det är mer tidseffektivt.</p>
+                        <p>Modulus, vilket var enkelt att hitta, var en trevlig överraskning på ett annars nästan oövervinnligt problem samt att modulus användes i flera uppgifter var väldigt positivt, t.ex. flicka/pojke. På tal om personsignum var det väldigt uppväckande att se, förstå och använda hur en statlig formel fungerar, något de flesta aldrig kanske ens funderat på i hela sitt liv, det samma kan sägas för referensnummer dock skulle de känns nyttigare i en uppgift där man skapar en databas för användare kanske.</p>
+                        <p>Att jag stötte på prototyp var av en ren slumpmässighet, dock en bra sådan. Tack var den lilla insyn jag fick kändes JavaScript och programmering överhuvudtaget mer levande, det är inte magi som händer när du kallar på en Date() funktion. Det är något en annan människa skrivit som du kan gå in och ändra på om du vill, dessutom reflekterade det en tidigare kurs där vi användes av konstruktörer för att skapa egna metoder.</p>
+                        <p>Detta är dock en del av programmering som jag ännu inte känner mig bekväm med då datainsamlingsförmågan ännu inte är på den nivån att jag enkelt tar reda på en metods funktioner och börjar ändra på dem för mina egna ändamål, men förhoppningsvis kommer vi dit så småningom.</p>
+                        <p>RGB uppgiften var klart den tuffaste dock med lösningen av ett fält, så ser ju alla färgomvandlare ut på google.com (duh!), istället för t.ex. 4 fält. Man kan väl säga att problem nog mest var självgenererande. Däremot var resultatet belönande eftersom det såg väldigt snyggt ut. Själva uppgiften kunde varit ett helt projekt för sig självt dock om man villat ha fler accepterade parametrar samt fler olika färgkodningsspråk.</p>
+                        <p>Projektet var bra i lärdom dock var det svårt att bli motivera för CSS delen utöver de simpla saker som syns på denna sida. Förhoppningsvis var tanken att arbeta med JS och inte CSS eftersom det är kursens ändamål dock tycker jag det är rimligt att fåtal poäng för att inte ha lämnat sidan utan CSS eftersom IT och grafisk design går hand i hand ända in i vår IDE.</p>
+                        <p>Tyvärr inga kommentarer för start koden till projektet då jag skrev allt för hand. Dock efter att snabbt ha sett igenom det snabbt tror jag uppgiften är fullt ut möjlig men det skulle ta lång tid att processerna någon annans kod, förstå den och sedan korrigera den.
+                        <p>Därför säger jag bara lycka till, ni har ju bara 100+ arbeten att göra det med. Vilket gör att jag absolut tycker att ni ska satsa på att få start koden till nästa år så ni kan automatisera erat arbeta mer, bli effektivare på att rätt och kunna fokusera mer tid på att undervisa.
+
+                </p>
+                <p class="signature">Kristoffer Kuvaja 16 November 2018</p>
+            </article>
+        </div>
+    </div>
+</div>

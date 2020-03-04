@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kristoffers Front-End</title>
+    <link rel="stylesheet" href="../media/temp.css">
+    <link rel="stylesheet" href="../media/pro3.css">
+    <link rel="stylesheet" href="../media/jquery-ui.css">
+
+    <!--Tar jquery direct från google, känns mer naturligt och de var bra, ifall den redan fanns i cache-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Mer imports-->
+    <script src="../script/Projekt 3/jquery-1.12.4.js"></script>
+    <script src="../script/Projekt 3/jquery-ui.js"></script>
+    <script src="../script/Projekt 3/datepicker-sv.js"></script>
+
+    <!--Fin animation som internet låna till mig, såhär till julen och allt, ho-ho-ho-->
+    <script src="../script/Projekt 3/jquery.snow.js"></script>
+    </head>
+    <body>
+    <div id="navbar">
+        <a href="../Home/">Home</a>
+        <a href="../pro1/">Projekt 1</a>
+        <a href="../rap1/">Projekt 1 rapport</a>
+        <a href="../pro2/">Projekt 2</a>
+        <a href="../rap2/">Projekt 2 rapport</a>
+        <a href="../pro3/" class="activeNav">Projekt 3</a>
+        <a href="../rap3/">Projekt 3 rapport</a>
+    </div>
+    <div id="bakgrundP3"></div>
+    <div id="mainFrame">
+        <div class="mainContent">
+                <h1 class="pageTitle">Projekt 3 - jQuery, AJAX och Cookies</h1>
+                       <span id="hide">Tryck på mig!!!!</span>
+                        <span id="show">Nej, på mig!!!</span><span id="nyFRIEND">Vem är du?</span><span id="FRIEND" title="">Vem är du?</span>
+                    <article>
+                            <h2>Modern JavaScript</h2>                        
+                            <p>Projektet går ut på att fördjupa sig i JavaScript för att kunna hänga med i dagens tekniska krav på webbsidor. jQuery är det ​vanligaste​ JavaScript biblioteket och underlättar manipuleringen och hanteringen av DOM, händelser och AJAX. Vi vill alltid hantera användarsessioner och byta ut innehållet på sidan utan en hel siduppdatering.</p>
+                    </article>
+                    <article class="left">
+                    <p>
+                        <p id="AJAX"></p>
+                    </p>
+                    <p>
+                        <img id="julTider" src="../media/LetitSnow.JPG" alt="Let it Snow">
+                    </p>
+                    <p>Current color: <span id="jqHEX"></span></p>
+                        <div id="rgbRED"></div>
+                        <div id="rgbGREEN"></div>
+                        <div id="rgbBLUE"></div>
+                    </article>
+                    <article class="right">
+                        <div id="jqDates"></div>
+                        <p>Du valde:</p>
+                        <div><input type="text" id="alternate" size="30" readonly></div>
+                    </article>
+                <div class="clear"></div>
+                    <article class="right">
+                        <p>HTML 5 RGB</p>
+                        <form name="htmlRGB">
+                            <input type="range" name="rdec" value="0" min="0" max="255" onchange="decTillHex();"/><input type="text" name="drod" value="00" size="5" readonly/><br>
+                            <input type="range" name="gdec" value="0" min="0" max="255" onchange="decTillHex();"/><input type="text" name="dgreen" value="00" size="5" readonly/><br>
+                            <input type="range" name="bdec" value="0" min="0" max="255" onchange="decTillHex();"/><input type="text" name="dblue" value="00" size="5" readonly/><br>
+                        </form> <!--CSS input[type=range] == 40 rader kort på w3 schools för något som såg snyggt ut; Nej tack, jQ va mycket finare iallafall! -->
+                            <p>
+                                <svg>
+                                    <rect id="boxOfRGB">
+                                        Varför har du inte en browser som tillåter SVG?
+                                    </rect>
+                                </svg>
+                            </p>
+                    </article>              
+                    <article class="left">
+                        <p>
+                            Här kan du äta upp din cookie!<br>
+                            Cookien används till röda rutan uppe i höger. Prova identifiera dig.<br>
+                            Om du sen håller musen över den får du veta hur många gånger du varit här.
+                        </p>
+                            <div id="cookieRedrum"><div id="Warning">Delete your Cookie!</div></div>
+                    </article>
+                <div class="clear"></div>
+                    <article class="left">
+                            <input type="button" id="personerLista" value="Mitt namn">
+                            <input type="button" id="djurLista" value="Mina katters namn"><br>
+                            <p id="jsonSpunk">En array i JSON, tryck för att visa olika infon.</p>
+                    </article>
+                    <article class="right">
+                        <p>Öppna olika typer av charts i ett nytt fönster.</p>
+                            <input type="button" value="Google Chart" onclick="window.open('../pro3/googlePie.html')">
+                            <input type="button" value="HighCharts"onclick="window.open('../pro3/highChart.html')">
+                            <input type="button" value="ChartJS"onclick="window.open('../pro3/chartJS.html')">
+                    </article>
+        </div>
+    </div>
+    <script src="../script/Projekt 3/home.js" type="text/javascript"></script></div>
+    </body>
+</html>
+           

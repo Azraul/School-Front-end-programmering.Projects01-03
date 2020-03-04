@@ -1,0 +1,30 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>Kristoffers ChartJS</title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    </head>
+    <body>
+            <canvas id="pie-chart" width="800" height="450"></canvas>
+    <script>
+new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Blåa", "Gråa", "Svarta", "Vita", "Ljusblåa"],
+      datasets: [{
+        label: "Par",
+        backgroundColor: ["#000066", "#8c8c8c","#000000","#f2f2f2","#6f6fdc"],
+        data: [4,4,8,6,2]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Par Strumpor'
+      }
+    }
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kristoffers Front-End</title>
+    <link rel="stylesheet" href="../media/projekt1.css">
+    <script type="text/javascript" src="../script/projekt1.js"></script>
+    </head>
+    <body>
+    <div id="navbar">
+        <a href="../Home/">Home</a>
+        <a href="../pro1/" class="activeNav" >Projekt 1</a>
+        <a href="../rap1/">Projekt 1 rapport</a>
+        <a href="../pro2/">Projekt 2</a>
+        <a href="../rap2/">Projekt 2 rapport</a>
+        <a href="../pro3/">Projekt 3</a>
+        <a href="../rap3/">Projekt 3 rapport</a>
+    </div>
+    <div id="bakgrundPengar"></div>
+    <div id="mainFrame">
+    <div id=laneApp>
+        <h1 class="pageTitle">Front-End</h1>
+        <h2 class="pageTitle">Första projektet</h2>
+    <!--- Uppg 1, namn hantering -->
+    <article class="left">
+        <h3>Sträng Hantering</h3>
+            <p>Skriv ditt namn:<form name="lånetagare">
+                <input type="text" name="firstName" placeholder="Förnamn"><br>
+                <input type="text" name="lastName" placeholder="Efternamn">
+                <p><input type="button" value="Registrera" onclick="generateName()"></form></p>
+                <span>Du är: </span><span id="fullName"></span></p>
+    </article>
+    <!--- Uppg 2, matematiska opertaioner -->
+    <article class="right">
+            <h3>Matematiska operationer</h3>
+            <p>Skriv in ett tal för omvandling</p>
+            <form name="talsystem">
+                <input type="text"  placeholder="3.14159265359" name="walletSize">
+                <input type="button" value="Omvandla" onclick="convertToManyThings()">
+            </form>
+        <ul id="mathoperations">
+            <li>Roten ur: <span id="sqrtTal"></span></li>
+            <li>Kvadrerat: <span id="squareTal"></span></li>
+            <li>Inverterat: <span id="invertTal"></span></li>
+            <li>Ditt heltal: <span id="helTal"></span></li>
+            <ul>
+                <li>Binär form: <span id="binaryTal"></span></li>
+                <li>Oktal form: <span id="oktaTal"></span></li>
+                <li>Hexadecimal form: <span id="hexaTal"></span></li>
+            </ul>
+        </ul>
+    </article>
+    <div class="sectionBreak"></div>
+        <!--- Uppg 3, lånekalkylator -->
+            <article    class="left">
+                <h3>Lånekalkylator</h3>    
+            <form name="loanKalken">
+                <p>Skriv in ett Lånebelopp (€), årlig ränta (%) och lånetid (år):</p>
+                <input type="number" placeholder="Lånebelopp(€)" name="userLoan"><br>
+                <input type="number" placeholder="Årlig ränta(%)"name="userTax"><br>
+                <input type="number" placeholder="Lånetid(år)"name="userLoanLength"><br>
+                <p><input type="button" value="Beräkna lånet" onclick="superEasyLoan()"></p>
+            </form>
+        
+            <p>Summor</p>
+            <p>Månatlig avbetalning: <span id="monthlyPay"></span><br>
+            Totalbelopp: <span id="totalPay"></span><br>
+            Observera att summorna är i heltal!</p>
+    </article>
+    <!--- Uppg 4, RGB -->
+    <article class="right">
+            <h3>Välj färg till låda!</h3>
+        <p>
+            Tar endast imot hela hexadecimaltal eller rgb värden.<br>
+            t.ex: #00ff00 eller rgb(0,255,0)
+        </p>
+        <p>
+            <svg>
+                <rect id="boxOfRGB">
+                    Varför har du inte en broswer som tillåter SVG?
+                </rect>
+            </svg></p>
+        <p>
+
+        <form name="RGBmonster">
+            <input type="text" placeholder="&quot #000000 &quot / &quot rgb( 0, 0, 0) &quot" name="userRGB">
+            <input type="button" value="Färgsätt" onclick="superRGB()">
+        </form>
+        <p>
+            Din RGB i decimal(rgb): <span id="userRGB"></span><br>
+            Din RGB i hexadecimal: <span id="userHexa"></span></p>
+        </p>
+    </article>
+
+    <div class="sectionBreak"></div>
+    <!-- Uppg 5, Random -->
+    <article class="left">
+        <h3>JavaScriptet gör det åt dig!</h3>
+        <input type="button" value="Skapa användare" onclick="UsersExtreme()">
+        <input type="button" value="Sortera" onclick="UserSorter2018()+VardenSorter2018()">
+        <div class="sectionBreak"></div>
+        <ul id="users">
+
+        </ul>
+        <ul id="varden">
+
+        </ul>
+    </article>
+
+    <!-- Uppg 6, Datum-->
+    <article class="right">
+        <h3>Datum behandlare</h3>
+        <p>Dagens datum är: <span id="dagensDatum">asdasd</span></p>
+        <p>Skriv in om hur många dagar du önskar betala, lördagar och söndagar flyttas till följande måndag:</p>
+        <form name="betalaDatum">
+            <input type="number" placeholder="14" name="userDateToPay">
+            <input type="button" value="Förfallodag" onclick="whenToPay()">
+        </form>
+        <p>
+            Du ska betala den <span id="userForfallodag"></span><br>
+            <span id="dayofpayment"></span>
+        </p>
+    </article>
+    <div class="sectionBreak"></div>
+    <!-- Uppg 7, Referensnummer-->
+    <article class="left">
+        <h3>Skapa ett referensnummer</h3>
+        <p>Tryck på knappen och få ditt referensnummer, 13 siffor, klappat och klart!</p>
+        <form>
+            <input type="button" value="Referensnummer" onclick="referens()">
+        </form>
+        <p>
+            Finskt referensnummer: <span id="finsktNummer"></span><br>
+            RF-referens: <span id="internationelltNummer"></span>
+        </p>
+    </article>
+
+    <!-- Uppg 8, Socialskyddsignum-->
+    <article class="right">
+        <h3>Socialskyddsignum</h3>
+        <p>
+            Skriv in ditt socialskyddsignum och tryck på knappen<br>
+            Only works for finnish people!
+        </p>
+
+        <p>
+            <form name="signum">
+                <input type="text" name="userSignum" placeholder="010118-123A">
+                <input type="button" value="Validera" onclick="robot()">
+            </form>
+        </p>
+        <p>
+                <span id="birthday">Är du en äkta finne? Skriv och prova!</span>
+        </p>
+    </article>
+    </div></div>
+    </body>
+</html>

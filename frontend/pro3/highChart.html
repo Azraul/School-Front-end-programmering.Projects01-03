@@ -1,0 +1,67 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>Kristoffers HighCharts</title>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    </head>
+    <body>
+            <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+    <script>
+        Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Förväntningar inför julen'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Aktiviteter',
+        colorByPoint: true,
+        data: [{
+            name: 'Sova',
+            y: 40,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'Äta',
+            y: 16
+        }, {
+            name: 'Spela',
+            y: 20
+        }, {
+            name: 'Glo in i väggen',
+            y: 4
+        }, {
+            name: 'Öppna paket',
+            y: 1
+        }, {
+            name: 'Dricka kaffe',
+            y: 8
+        }, {
+            name: 'Se på film',
+            y: 8
+        }]
+    }]
+});
+    </script>

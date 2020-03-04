@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kristoffers Front-End</title>
+    <link rel="stylesheet" href="../media/temp.css">
+    <link rel="stylesheet" href="../media/sten.css">
+    </head>
+    <body>
+    <div id="navbar">
+        <a href="../Home/">Home</a>
+        <a href="../pro1/">Projekt 1</a>
+        <a href="../rap1/">Projekt 1 rapport</a>
+        <a href="../pro2/" class="activeNav">Projekt 2</a>
+        <a href="../rap2/">Projekt 2 rapport</a>
+        <a href="../pro3/">Projekt 3</a>
+        <a href="../rap3/">Projekt 3 rapport</a>
+    </div>
+    <div id="bakgrundP2"></div>
+    <div id="mainFrame">
+        <div class="mainContent">
+            <div class="pageTitle">
+                <h1>Sten - Sax - Påse</h1>
+                <article id="mainContent">
+                    <p>
+                            <h2>Det klassiska spelet för upp till 2 spelare!</h2>
+                            <form name="stensaxpåseForm">
+                                <input type="text" name="player1" placeholder="Spelare 1"><br>
+                                <input type="text" name="player2" placeholder="Spelare 2"><br>
+                                <input type="button" value="Börja spelet" onclick="SSP()">
+                                <input type="button" value="Ta bort resultat" onclick="resetResultat()">
+                            </form>
+                            
+                    </p>
+                    
+                    <p>
+                        <ul id="resultatLista">
+                            
+                        </ul>
+                    </p>
+                    </article>
+                    <div id="navGameMenu">
+                        <div><a href="puzzle.html">Pussel</a></div>
+                        <div><a href="paint.html">Paint</a></div>
+                        <div><a href="tidtagare.html">Tidtagare</a></div>
+                        <div><a href="sten.html" class="activeNav">Sten, Sax, Påse</a></div>
+                        <div><a href="galleri.html">Bildgalleri</a></div>
+                        <div><a href="memory.html">Memory</a></div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../script/sten.js"></script>
+    </body>
+</html>
+           

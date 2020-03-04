@@ -1,0 +1,2 @@
+<h3>Va fint, det börja snöa!<br>
+Brought to you by AJAX</h3>

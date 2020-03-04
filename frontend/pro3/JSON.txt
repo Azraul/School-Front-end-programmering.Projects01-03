@@ -1,0 +1,8 @@
+{
+    "name":"Kristoffer",
+    "age":29,
+    "pets":[
+        { "animal":"cat", "name":"Eppu" },
+        { "animal":"cat", "name":"Miko" }
+    ]    
+}
